@@ -74,7 +74,12 @@ letter-spacing:0.06em;transition:color 0.2s;
   outline:none;
   transition:border-color 0.2s;
 }
-.fi:focus{border-color:var(–cyan);box-shadow:0 0 0 3px rgba(0,190,255,0.08);}
+.fi:focus {
+  border-color: var(--cyan);
+  background: rgba(255, 255, 255, 0.12); /* နှိပ်လိုက်ရင် နောက်ခံ ပိုလင်းလာစေရန် */
+  box-shadow: 0 0 0 3px rgba(0, 190, 255, 0.08);
+}
+
 .fi::placeholder{color:var(–muted);}
 .fi.mono{font-family:‘JetBrains Mono’,monospace;font-size:1.05rem;color:var(–cyan);font-weight:700;}
 .frow{display:grid;grid-template-columns:1fr 1fr;gap:10px;}
