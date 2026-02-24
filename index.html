@@ -61,7 +61,19 @@ letter-spacing:0.06em;transition:color 0.2s;
 .sc-label::after{content:’’;flex:1;height:1px;background:linear-gradient(90deg,var(–border),transparent);}
 .fg{margin-bottom:12px;}
 .fl{font-size:0.68rem;text-transform:uppercase;letter-spacing:0.09em;color:var(–muted2);margin-bottom:6px;display:block;}
-.fi{width:100%;background:rgba(0,0,0,0.38);border:1.5px solid var(–border);border-radius:9px;padding:11px 13px;color:var(–text);font-family:‘Syne’,‘Noto Sans Myanmar’,sans-serif;font-size:0.88rem;outline:none;transition:border-color 0.2s;}
+/* ဒီနေရာကို ရှာပြီး အစားထိုးပါ */
+.fi{
+  width:100%;
+  background:rgba(255,255,255,0.07); /* နောက်ခံကို အနည်းငယ် လင်းစေရန် */
+  border:1.5px solid var(--border);
+  border-radius:9px;
+  padding:11px 13px;
+  color:#ffffff; /* ရိုက်လိုက်တဲ့စာလုံးကို အဖြူရောင်ပြောင်းရန် */
+  font-family:'Syne','Noto Sans Myanmar',sans-serif;
+  font-size:0.88rem;
+  outline:none;
+  transition:border-color 0.2s;
+}
 .fi:focus{border-color:var(–cyan);box-shadow:0 0 0 3px rgba(0,190,255,0.08);}
 .fi::placeholder{color:var(–muted);}
 .fi.mono{font-family:‘JetBrains Mono’,monospace;font-size:1.05rem;color:var(–cyan);font-weight:700;}
@@ -81,7 +93,21 @@ letter-spacing:0.06em;transition:color 0.2s;
 .login-title{font-size:1.4rem;font-weight:800;background:linear-gradient(135deg,#fff,var(–cyan));-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;margin-bottom:5px;}
 .login-sub{font-size:0.74rem;color:var(–muted2);margin-bottom:22px;}
 .pw-wrap{position:relative;margin-bottom:12px;}
-.pw-input{width:100%;background:rgba(0,0,0,0.4);border:1.5px solid var(–border);border-radius:12px;padding:13px 44px 13px 16px;color:var(–text);font-family:‘JetBrains Mono’,monospace;font-size:1rem;outline:none;transition:border-color 0.2s;letter-spacing:0.1em;}
+/* ဒီနေရာကို ရှာပြီး အစားထိုးပါ */
+.pw-input{
+  width:100%;
+  background:rgba(255,255,255,0.07); /* နောက်ခံအရောင် */
+  border:1.5px solid var(--border);
+  border-radius:12px;
+  padding:13px 44px 13px 16px;
+  color:#ffffff; /* ရိုက်လိုက်တဲ့စာလုံးကို အဖြူရောင်ပြောင်းရန် */
+  font-family:'JetBrains Mono',monospace;
+  font-size:1rem;
+  outline:none;
+  transition:border-color 0.2s;
+  letter-spacing:0.1em;
+}
+
 .pw-input:focus{border-color:var(–cyan);}
 .pw-input::placeholder{color:var(–muted);letter-spacing:0;}
 .pw-eye{position:absolute;right:12px;top:50%;transform:translateY(-50%);background:none;border:none;color:var(–muted2);cursor:pointer;font-size:1rem;}
